@@ -1,0 +1,24 @@
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"
+  integrity="sha384-DKYJZ8NLiK8MN4/C5P2dtSmLQ4KwPaoqAfyA/DfmEc1VDxu4yyC7wy6K1Hs90nka" crossorigin="anonymous"></script>
+<script>
+  Kakao.init('e3b309f65fad84853a95b94d16b3e090'); // Enter your app's JavaScript key
+</script>
+
+<a id="kakaotalk-sharing-btn" href="javascript:;">
+  <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+    alt="Kakao Talk sharing button" />
+</a>
+
+<script>
+  Kakao.Share.createDefaultButton({
+    container: '#kakaotalk-sharing-btn',
+    objectType: 'text',
+    text:
+      'The Text template provided as a default template can contain text up to 200 characters. The Text template has a text area and a default button. You can also add an additional button. If you use Kakao Talk sharing API, you can send a message with a more extended form of templates, such as sending multiple images and profile information.',
+    link: {
+      // Must match the site domain registered in [My Application] > [Platform]
+      mobileWebUrl: 'https://developers.kakao.com',
+      webUrl: 'https://developers.kakao.com',
+    },
+  });
+</script>
