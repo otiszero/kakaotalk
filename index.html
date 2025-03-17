@@ -12,13 +12,17 @@
 <script>
   Kakao.Share.createDefaultButton({
     container: '#kakaotalk-sharing-btn',
-    objectType: 'text',
-    text:
-      'The Text template provided as a default template can contain text up to 200 characters. The Text template has a text area and a default button. You can also add an additional button. If you use Kakao Talk sharing API, you can send a message with a more extended form of templates, such as sending multiple images and profile information.',
-    link: {
-      // Must match the site domain registered in [My Application] > [Platform]
-      mobileWebUrl: 'https://developers.kakao.com',
-      webUrl: 'https://developers.kakao.com',
+    objectType: 'feed',
+    content: {
+      title: 'Degen park - Run the Pepe',
+      description: 'This is description text',
+      imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8_7KoPoOpcQQ6FisSkvPhCdqdw3Al9Wf3Q&s',
+      link: {
+        // Must match the site domain registered in [My Application] > [Platform]
+        mobileWebUrl: 'https://kakaotalk-rho.vercel.app/',
+        webUrl: 'https://kakaotalk-rho.vercel.app/',
+      },
     },
   });
 </script>
